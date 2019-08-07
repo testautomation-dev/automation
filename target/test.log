@@ -1,0 +1,4 @@
+2019-08-07 11:33:14.759 INFO  LoginSteps.java:24: Given: Browser is open
+2019-08-07 11:33:14.762 INFO  LoginSteps.java:30: When: I login into EY mail
+2019-08-07 11:33:17.767 INFO  LoginSteps.java:37: Then: I am able to see the main page
+2019-08-07 11:33:17.778 INFO  LoginSteps.java:43: Then: exit the page
