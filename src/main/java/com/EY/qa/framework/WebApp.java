@@ -6,6 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -69,9 +71,26 @@ public class WebApp {
 //            //ChromeDriverManager.getInstance().setup();
 //        }
 
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
+        //WebDriverManager.iedriver().setup();
         //Create a new ChromeDriver
-        driver = new ChromeDriver();
+        //WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().architecture(io.github.bonigarcia.wdm.Architecture.X32).setup();
+//        ChromeOptions options = new ChromeOptions();
+//        options.setExperimentalOption("useAutomationExtension", false);
+//
+//
+//
+//        driver = new ChromeDriver(options);
+//        //driver = new InternetExplorerDriver();
+//
+        //Set the path to Chrome driver
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\BZ324DG\\Desktop\\chromedriver_win32\\chromedriver.exe" );
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("useAutomationExtension", false);
+
+        //Create driver object for Chrome
+        WebDriver driver = new ChromeDriver(options);
 
 //        DesiredCapabilities IEcaps = DesiredCapabilities.chrome();
 //
