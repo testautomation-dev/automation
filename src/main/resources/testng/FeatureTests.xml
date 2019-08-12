@@ -13,6 +13,11 @@
 
     <!-- To Run All feature files available
          Provide AllFeatureRunner, which picks up all feature files -->
+
+    <listeners>
+        <listener class-name="com.EY.qa.ExtentReportListener.ExtentReporterNG" />
+    </listeners>
+
     <test name="AllTest">
         <classes>
             <class name="com.EY.qa.runners.AllFeaturesRunner" />
