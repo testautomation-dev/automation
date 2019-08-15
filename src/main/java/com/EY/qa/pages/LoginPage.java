@@ -1,6 +1,7 @@
 package com.EY.qa.pages;
 
 import com.EY.qa.framework.ReadProperties;
+import com.EY.qa.framework.SetupTestDriver;
 import com.EY.qa.framework.WebApp;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +11,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
+import java.net.MalformedURLException;
 import java.util.Map;
 import java.util.Properties;
 
@@ -64,6 +68,9 @@ public class LoginPage {
     @FindBy(name="submit")
     WebElement loginBtn;
 
+    @FindBy(name="logout")
+    WebElement logoutBtn;
+
     @FindBy(name="password")
     WebElement password;
 
@@ -82,6 +89,15 @@ public class LoginPage {
         //verifyPageLoaded();
     }
 
+    public void logout() {
+        logoutBtn.click();
+        //verifyPageLoaded();
+    }
+//	@FindBy(css="")
+//	private WebElement webElement;
+//	@FindBy(css="")
+//	private WebElement webElement;
+
     /**
      * Login with configured credentials
      */
@@ -92,7 +108,7 @@ public class LoginPage {
         login(username, password);
     }
 
-    public boolean verifyMainPage() {
+    public boolean verifyMainPage() throws MalformedURLException {
         boolean ret = true;
         String pageSource = WebApp.getDriver().getPageSource();
         ret = ret && pageSource.contains("Home");

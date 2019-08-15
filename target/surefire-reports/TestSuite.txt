@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.113 sec - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 16.465 sec <<< FAILURE! - in TestSuite
+feature(com.EY.qa.runners.AllFeaturesRunner)  Time elapsed: 4.521 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.ExceptionInInitializerError
+Caused by: java.lang.ExceptionInInitializerError
+Caused by: java.lang.NullPointerException
+
+feature(com.EY.qa.runners.AllFeaturesRunner)  Time elapsed: 0.094 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: Could not initialize class com.EY.qa.framework.WebApp
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.EY.qa.framework.WebApp
+

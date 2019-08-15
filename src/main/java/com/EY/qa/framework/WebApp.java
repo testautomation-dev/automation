@@ -4,23 +4,30 @@ package com.EY.qa.framework;
 import com.EY.qa.pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.net.URL;
 
 /**
  * Created by Aruna on 6/20/2016.
  */
 public class WebApp {
-    /* WebDriver variables */
-    private static WebDriver driver = null;
+
+
+    public static WebDriver driver =null;
     private static WebApp instance = null;
     private static final int timeout = 5;
     private static final String pageLoadedText = "Login with Username and Password";
@@ -34,12 +41,13 @@ public class WebApp {
     private static final String username = props.getProperty("username");
     private static final String password = props.getProperty("password");
     private static boolean loggedIn = false;
+     static String baseURL, nodeURL;
 
     /* Private constructor - only one instance possible for this class */
     private WebApp() {
+
         instance = this;
     }
-
     public static WebApp getInstance() {
         if (instance != null) {
             return instance;
@@ -53,70 +61,38 @@ public class WebApp {
         return url;
     }
 
-    public static WebDriver initializeDriver() {
+    public static WebDriver initializeDriver() throws MalformedURLException {
         if (driver != null) {
-            driver.quit();
-        }
+         driver.quit();
+            }
+//        if (driver != null) {
+//            return driver;
+       // } else {
+            nodeURL = System.getProperty("node")!=null ?System.getProperty("node"):"http://localhost:5555"  + "/wd/hub";
+            DesiredCapabilities capability = DesiredCapabilities.chrome();
+            System.out.println("System.getProperty(\"hostName\")" + System.getProperty("browser"));
+            capability.setBrowserName(System.getProperty("browser"));
+            ChromeOptions options = new ChromeOptions();
+            options.setExperimentalOption("useAutomationExtension", false);
+            //capability.setPlatform(Platform.WIN10);
+            capability.setCapability(ChromeOptions.CAPABILITY, options);
+            driver = new RemoteWebDriver(new URL(nodeURL), capability);
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+            // driver.manage().window().maximize();
+            driver.get(props.getProperty("url"));
+            loggedIn = false;
+            return driver;
 
-//        String browser = props.getProperty("browser");
-//        if (browser == "firefox") {
-//            driver = new FirefoxDriver();
-//        } else if (browser == "chrome") {
-//            driver = new ChromeDriver();
-//        } else if (browser == "ie") {
-//            driver = new InternetExplorerDriver();
-//        } else {
-//           // System.setProperty("webdriver.chrome.driver", "/Users/ashwingajjala/Downloads/chromedriver");
-//            //driver = new ChromeDriver();
-//            //ChromeDriverManager.getInstance().setup();
-//        }
-
-        //WebDriverManager.chromedriver().setup();
-        //WebDriverManager.iedriver().setup();
-        //Create a new ChromeDriver
-        //WebDriverManager.chromedriver().setup();
-//        WebDriverManager.chromedriver().architecture(io.github.bonigarcia.wdm.Architecture.X32).setup();
-//        ChromeOptions options = new ChromeOptions();
-//        options.setExperimentalOption("useAutomationExtension", false);
-//
-//
-//
-//        driver = new ChromeDriver(options);
-//        //driver = new InternetExplorerDriver();
-//
-        //Set the path to Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\BZ324DG\\Desktop\\chromedriver_win32\\chromedriver.exe" );
-        ChromeOptions options = new ChromeOptions();
-        options.setExperimentalOption("useAutomationExtension", false);
-
-        //Create driver object for Chrome
-        WebDriver driver = new ChromeDriver(options);
-
-//        DesiredCapabilities IEcaps = DesiredCapabilities.chrome();
-//
-//
-//
-//        //DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-//
-//        IEcaps.setCapability(CapabilityType.BROWSER_NAME, "chrome");//IEcaps .setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-//
-//        WebDriver driver = new ChromeDriver(IEcaps );
-
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        // driver.manage().window().maximize();
-        driver.get(props.getProperty("url"));
-        loggedIn = false;
-        return driver;
     }
 
-    public static WebDriver getDriver() {
+    public static WebDriver getDriver()  throws MalformedURLException{
         if (driver == null) {
             driver = initializeDriver();
         }
         return driver;
     }
 
-    public static LoginPage gotoLoginPage() {
+    public static LoginPage gotoLoginPage() throws MalformedURLException {
         driver = getDriver();
         driver.manage().deleteAllCookies();
         loggedIn = false;
@@ -128,10 +104,13 @@ public class WebApp {
 
     public static void quitDriver() {
         if (driver != null) {
-            driver.close();
+            driver.quit();
             driver = null;
             loggedIn = false;
         }
+    }
+
+    public static void clicklogout() {
     }
 
     protected void finalize() throws Throwable {
@@ -139,7 +118,7 @@ public class WebApp {
         super.finalize();
     }
 
-    public static void resetDriver() {
+    public static void resetDriver()  throws MalformedURLException{
         driver = getDriver();
         driver.manage().deleteAllCookies();
         loggedIn = false;
@@ -157,8 +136,18 @@ public class WebApp {
 
     public static void stopDriver() {
         if (driver != null) {
-            driver.quit();
+            driver.close();
+            //driver.quit();
+            try {
+                Runtime.getRuntime().exec("taskkill /F /IM geckodriver.exe");
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            driver = null;
         }
+       // driver.quit();
+        driver = null;
 
     }
 }

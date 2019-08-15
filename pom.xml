@@ -87,6 +87,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
+                    <systemPropertyVariables>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <environment>${browser}</environment>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <environment>${node}</environment>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <environment>${os}</environment>
+                    </systemPropertyVariables>
+
                     <suiteXmlFiles>
                         <suiteXmlFile>src/main/resources/testng/FeatureTests.xml</suiteXmlFile>
                     </suiteXmlFiles>
