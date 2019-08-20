@@ -87,7 +87,9 @@ public class WebApp {
 
     public static WebDriver getDriver()  throws MalformedURLException{
         if (driver == null) {
-            driver = initializeDriver();
+            SetupTestDriver SetupTestDriver = new SetupTestDriver();
+            driver = SetupTestDriver.getDriver();
+            //driver = initializeDriver();
         }
         return driver;
     }

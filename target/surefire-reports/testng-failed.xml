@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [AllTestsSuite]" parallel="tests">
+<suite parallel="tests" name="Failed suite [AllTestsSuite]" verbose="0">
   <parameter name="node" value="http:\\localhost:5555"/>
   <parameter name="os" value="windows"/>
   <parameter name="url" value="https://www.google.com/"/>
   <listeners>
     <listener class-name="com.EY.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="AllTest(failed)" parallel="tests">
+  <test thread-count="5" parallel="tests" name="AllTest(failed)" verbose="0">
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.EY.qa.runners.AllFeaturesRunner">
         <methods>
+          <include name="killBrowser"/>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0 1"/>
+          <include name="feature" invocation-numbers="2"/>
           <include name="setUp"/>
           <include name="tearDownClass"/>
         </methods>

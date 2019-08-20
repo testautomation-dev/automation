@@ -73,6 +73,8 @@ public class LoginPage {
 
     @FindBy(name="password")
     WebElement password;
+    @FindBy(linkText="Click here")
+    WebElement clickHere;
 
     /**
      * Login with specified credentials.
@@ -91,6 +93,11 @@ public class LoginPage {
 
     public void logout() {
         logoutBtn.click();
+        //verifyPageLoaded();
+    }
+
+    public void todo() {
+        clickHere.click();
         //verifyPageLoaded();
     }
 //	@FindBy(css="")

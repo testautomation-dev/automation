@@ -3,11 +3,13 @@ package com.EY.qa.runners;
 import com.EY.qa.framework.SetupTestDriver;
 import com.EY.qa.framework.WebApp;
 import cucumber.api.CucumberOptions;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import com.EY.qa.framework.SetupTestDriver;
 
 import java.net.MalformedURLException;
@@ -17,14 +19,14 @@ import java.net.MalformedURLException;
  */
 @CucumberOptions(features = "src/main/resources/features",
         plugin = {"pretty" ,
-                "json:Folder_Name/cucumber.json"},
+                "json:target/cucumber.json"},
         glue = "com.EY.qa.steps",
-        tags ={"@login"},
+        tags ={"@login, @logout"},
         monochrome = true)
 
 
 public class AllFeaturesRunner extends AbstractTestNGCucumberTests {
-    //public static WebDriver driver;
+   WebDriver driver;
 
     @BeforeSuite(alwaysRun = true)
     public void setUp() throws MalformedURLException {
@@ -34,5 +36,16 @@ public class AllFeaturesRunner extends AbstractTestNGCucumberTests {
 
     }
 
+   // @After("@selenium")
+    //@After("@browser")
+   // @AfterSuite(alwaysRun = true)
+    //@AfterMethod (alwaysRun = true)
+    public void killBrowser(Scenario scenario) throws MalformedURLException {
+        if (scenario.isFailed()) {
+            scenario.embed(((TakesScreenshot)WebApp.getDriver()).getScreenshotAs(OutputType.BYTES), "image/png");
+        }
+        //driver.close();
+        //driver.quit();
+    }
 
 }

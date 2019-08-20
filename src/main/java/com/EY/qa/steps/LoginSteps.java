@@ -58,4 +58,12 @@ public class LoginSteps {
         loginPage.logout();
     }
 
+    @Then("^Click on Click Here Link$")
+    public void i_am_able_ToDo_page() throws Throwable {
+        log.info("Then: logout the page");
+        //loginPage = webApp.gotoLoginPage();
+        loginPage.todo();
+    }
+
+
 }
