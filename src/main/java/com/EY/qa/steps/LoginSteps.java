@@ -3,6 +3,7 @@ package com.EY.qa.steps;
 import com.EY.qa.framework.SetupTestDriver;
 import com.EY.qa.framework.WebApp;
 import com.EY.qa.pages.LoginPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -63,6 +64,39 @@ public class LoginSteps {
         log.info("Then: logout the page");
         //loginPage = webApp.gotoLoginPage();
         loginPage.todo();
+    }
+
+    @Then("^Click on Add a Todo Link$")
+    public void click_on_Add_a_Todo_Link() throws Throwable {
+        loginPage.addtodo();
+
+    }
+
+
+    @Then("^click on add link$")
+    public void click_on_add_link() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^Click on Delete Button$")
+    public void click_on_Delete_Button() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        loginPage.delete();
+
+    }
+
+    @Then("^Click on EY Link$")
+    public void click_on_EY_Button() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        loginPage.eyhome();
+
+    }
+
+    @Then("^Click on \"([^\"]*)\" Link$")
+    public void click_on_Link(String arg1) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
     }
 
 

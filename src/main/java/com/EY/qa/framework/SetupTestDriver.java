@@ -26,7 +26,8 @@ public class SetupTestDriver {
     Properties props = null;
 
     public  SetupTestDriver() throws MalformedURLException {
-        this.browser = System.getProperty("browser") != null ? System.getProperty("browser"):"chrome";
+        this.browser = System.getProperty("browser") != null ? System.getProperty("browser"):"chrome" +
+                "";
         this.os =  System.getProperty("os") != null ? System.getProperty("os"):"windows";
        // this.baseUrl = baseUrl;
         this.node = System.getProperty("node") != null ? System.getProperty("node"):"http://localhost:5555";
@@ -41,8 +42,13 @@ public class SetupTestDriver {
             this.driver = new RemoteWebDriver(new URL(node + "/wd/hub"), chromeOptions);
         } else if (browser.equalsIgnoreCase("firefox")) {
             FirefoxOptions options = new FirefoxOptions();
-            options.setBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"); //This is the location where you have installed Firefox on your machine
+            options.setBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+            //System.setProperty("webdriver.gecko.driver", "C:\\Users\\BZ324DG\\Desktop\\Selenium\\geckodriver-v0.9.0-win64\\geckodriver.exe");//This is the location where you have installed Firefox on your machine
              //driver = new FirefoxDriver(options);
+//            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+//            capabilities.setCapability("marionette", true);
+//            capabilities.setCapability("gecko", true);
+            //this.driver = new RemoteWebDriver(new URL(node + "/wd/hub"), capabilities);
             this.driver = new RemoteWebDriver(new URL(node + "/wd/hub"), options);
         } else {
            File file = new File("C:\\Users\\BZ324DG\\Desktop\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe");

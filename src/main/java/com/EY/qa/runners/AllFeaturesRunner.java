@@ -21,7 +21,7 @@ import java.net.MalformedURLException;
         plugin = {"pretty" ,
                 "json:target/cucumber.json"},
         glue = "com.EY.qa.steps",
-        tags ={"@login, @logout"},
+        tags ={},
         monochrome = true)
 
 

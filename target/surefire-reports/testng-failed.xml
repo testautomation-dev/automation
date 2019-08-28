@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [AllTestsSuite]" verbose="0">
-  <parameter name="node" value="http:\\localhost:5555"/>
-  <parameter name="os" value="windows"/>
-  <parameter name="url" value="https://www.google.com/"/>
   <listeners>
     <listener class-name="com.EY.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
@@ -13,9 +10,8 @@
     <classes>
       <class name="com.EY.qa.runners.AllFeaturesRunner">
         <methods>
-          <include name="killBrowser"/>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="2"/>
+          <include name="feature" invocation-numbers="3"/>
           <include name="setUp"/>
           <include name="tearDownClass"/>
         </methods>

@@ -16,11 +16,7 @@
 
 
 
-        <parameter name="url" value="https://www.google.com/"/>
 
-        <parameter name="os" value="windows"/>
-
-        <parameter name="node" value="http:\\localhost:5555"/>
 
     <listeners>
         <listener class-name="com.EY.qa.ExtentReportListener.ExtentReporterNG" />

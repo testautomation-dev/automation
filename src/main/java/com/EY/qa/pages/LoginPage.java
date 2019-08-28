@@ -68,13 +68,21 @@ public class LoginPage {
     @FindBy(name="submit")
     WebElement loginBtn;
 
-    @FindBy(name="logout")
+    @FindBy(xpath = "/html/body/nav/div[2]/ul[2]/li/a")
     WebElement logoutBtn;
 
     @FindBy(name="password")
     WebElement password;
     @FindBy(linkText="Click here")
     WebElement clickHere;
+    @FindBy(className="btn btn-warning")
+    WebElement delete;
+
+    @FindBy(className="navbar-brand")
+    WebElement eyhome;
+
+    @FindBy(xpath = "/html/body/div/div/a")
+    WebElement addtodo;
 
     /**
      * Login with specified credentials.
@@ -123,5 +131,17 @@ public class LoginPage {
         //ret = ret && pageSource.contains("Sent");
         //ret = ret && pageSource.contains("Archive");
         return ret;
+    }
+
+    public void delete() {
+        delete.click();
+    }
+
+    public void eyhome() {
+        eyhome.click();
+    }
+
+    public void addtodo() {
+        addtodo.click();
     }
 }
