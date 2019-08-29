@@ -1,6 +1,6 @@
 Feature: ToDo Module
   Test Todo module functionality
-  @todo @cicd
+  @logout
   Scenario: Logout from EY page
     Given Browser is open
     When I login into EY mail

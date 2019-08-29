@@ -1,6 +1,6 @@
 Feature:Add a Todo to EY Module
   Add a Todo to EY functionality
-  @addTodo @cicd
+  @addTodo
   Scenario: Add a Todo to EY page
     Given Browser is open
     When I login into EY mail

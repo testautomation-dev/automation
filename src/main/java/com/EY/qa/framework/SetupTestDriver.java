@@ -36,8 +36,11 @@ public class SetupTestDriver {
 
         Platform platform = Platform.fromString(os.toUpperCase());
         if(browser.equalsIgnoreCase("chrome")) {
+            //System.setProperty("webdriver.chrome.driver", "C:\\Users\\BZ324DG\\Desktop\\Selenium\\chromedriver.exe");
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setCapability("platform", platform);
+            //chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+
+            //chromeOptions.setCapability("platform", platform);
             chromeOptions.setExperimentalOption("useAutomationExtension", false);
             this.driver = new RemoteWebDriver(new URL(node + "/wd/hub"), chromeOptions);
         } else if (browser.equalsIgnoreCase("firefox")) {

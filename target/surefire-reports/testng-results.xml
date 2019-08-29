@@ -1,267 +1,930 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="0" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-28T20:43:54Z" name="AllTestsSuite" finished-at="2019-08-28T20:46:53Z" duration-ms="178027">
+  <suite started-at="2019-08-29T15:28:46Z" name="AllTestsSuite" finished-at="2019-08-29T15:28:47Z" duration-ms="817">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2019-08-28T20:43:54Z" name="AllTest" finished-at="2019-08-28T20:46:53Z" duration-ms="178027">
+    <test started-at="2019-08-29T15:28:46Z" name="AllTest" finished-at="2019-08-29T15:28:47Z" duration-ms="817">
       <class name="com.EY.qa.runners.AllFeaturesRunner">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:43:48Z" name="setUp" finished-at="2019-08-28T20:43:54Z" duration-ms="6385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:43:55Z" name="setUpClass" finished-at="2019-08-28T20:43:55Z" duration-ms="380" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:43:55Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T20:43:57Z" duration-ms="2422" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login Module]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:43:57Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T20:46:30Z" duration-ms="152129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Logout Module]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:46:30Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T20:46:35Z" duration-ms="5911" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Add a Todo to EY Module]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:46:35Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T20:46:37Z" duration-ms="1700" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Delete Todo from EY page]]>
-              </value>
-            </param>
-          </params>
-          <exception class="cucumber.runtime.CucumberException">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:40Z" name="setUp" finished-at="2019-08-29T15:28:46Z" duration-ms="6155" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57115}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir=C:\Users\BZ324DG\AppData\Local\Temp\scoped_dir7836_1302550181}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5235d43e20518d1e105eb08a676e76de
-*** Element info: {Using=class name, value=btn btn-warning}
-Command duration or timeout: 0 milliseconds]]>
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57115}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir=C:\Users\BZ324DG\AppData\Local\Temp\scoped_dir7836_1302550181}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5235d43e20518d1e105eb08a676e76de
-*** Element info: {Using=class name, value=btn btn-warning}
-Command duration or timeout: 0 milliseconds
-at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57115}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir=C:\Users\BZ324DG\AppData\Local\Temp\scoped_dir7836_1302550181}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5235d43e20518d1e105eb08a676e76de
-*** Element info: {Using=class name, value=btn btn-warning}
-Command duration or timeout: 0 milliseconds
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:403)
-at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy33.click(Unknown Source)
-at com.EY.qa.pages.LoginPage.delete(LoginPage.java:137)
-at com.EY.qa.steps.LoginSteps.click_on_Delete_Button(LoginSteps.java:85)
-at ✽.Then Click on Delete Button(deleteTodo.feature:9)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:403)
-at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy33.click(Unknown Source)
-at com.EY.qa.pages.LoginPage.delete(LoginPage.java:137)
-at com.EY.qa.steps.LoginSteps.click_on_Delete_Button(LoginSteps.java:85)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at cucumber.runtime.Utils$1.call(Utils.java:37)
-at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-at cucumber.runtime.Utils.invoke(Utils.java:31)
-at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-at cucumber.runtime.Runtime.runStep(Runtime.java:299)
-at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
-  (Session info: chrome=76.0.3809.100)
-  (Driver info: chromedriver=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57115}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}), userDataDir=C:\Users\BZ324DG\AppData\Local\Temp\scoped_dir7836_1302550181}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5235d43e20518d1e105eb08a676e76de
-*** Element info: {Using=class name, value=btn btn-warning}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Driver info: driver.version: unknown
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
-Driver info: driver.version: EventFiringWebDriver
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
-at com.sun.proxy.$Proxy1.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
-at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
-at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
 at java.util.concurrent.FutureTask.run(Unknown Source)
-at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:46Z" name="setUpClass" finished-at="2019-08-29T15:28:46Z" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:46:37Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T20:46:43Z" duration-ms="6024" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[EY Home Page Module]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:46:43Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T20:46:52Z" duration-ms="9273" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ToDo Module]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-28T20:46:53Z" name="tearDownClass" finished-at="2019-08-28T20:46:53Z" duration-ms="23" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Command duration or timeout: 5.34 seconds
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.EY.qa.framework.SetupTestDriver.<init>(SetupTestDriver.java:55)
+at com.EY.qa.runners.AllFeaturesRunner.setUp(AllFeaturesRunner.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_binary: C:/Program Files (x86)/Mozi..., moz:firefoxOptions: {args: [], binary: C:/Program Files (x86)/Mozi..., prefs: {}}}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'US1255154W1', ip: '192.168.86.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:87)
+at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.Collections$2.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.DistinctOps$1$2.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Unknown Source)
+at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.EY.qa.runners.AllFeaturesRunner@3c0a50da]" started-at="2019-08-29T15:28:47Z" name="tearDownClass" finished-at="2019-08-29T15:28:47Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,0 +1,536 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login into EY",
+        "description": "",
+        "id": "login-module;login-into-ey",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 243819900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open",
+            "match": {
+              "location": "LoginSteps.main_page_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1503965200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login into EY mail",
+            "match": {
+              "location": "LoginSteps.i_login_into_the_webpage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18304500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am able to see the main page",
+            "match": {
+              "location": "LoginSteps.i_am_able_to_go_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 278861600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "exit the page",
+            "match": {
+              "location": "LoginSteps.i_am_able_exit_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Module",
+    "description": "Test Login module functionality",
+    "id": "login-module",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Logout from EY page",
+        "description": "",
+        "id": "logout-module;logout-from-ey-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open",
+            "match": {
+              "location": "LoginSteps.main_page_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5423246400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login into EY mail",
+            "match": {
+              "location": "LoginSteps.i_login_into_the_webpage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29109300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am able to see the main page",
+            "match": {
+              "location": "LoginSteps.i_am_able_to_go_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 199109200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on logout button",
+            "match": {
+              "location": "LoginSteps.i_am_able_logout_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 388116700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "exit the page",
+            "match": {
+              "location": "LoginSteps.i_am_able_exit_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@logout"
+          }
+        ]
+      }
+    ],
+    "name": "Logout Module",
+    "description": "Test Logout module functionality",
+    "id": "logout-module",
+    "keyword": "Feature",
+    "uri": "Logout.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Add a Todo to EY page",
+        "description": "",
+        "id": "add-a-todo-to-ey-module;add-a-todo-to-ey-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 238600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open",
+            "match": {
+              "location": "LoginSteps.main_page_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5707256800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login into EY mail",
+            "match": {
+              "location": "LoginSteps.i_login_into_the_webpage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23958200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am able to see the main page",
+            "match": {
+              "location": "LoginSteps.i_am_able_to_go_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "Click on Todos Link",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Click on Add a Todo Link",
+            "match": {
+              "location": "LoginSteps.click_on_Add_a_Todo_Link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on add link",
+            "match": {
+              "location": "LoginSteps.click_on_add_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "exit the page",
+            "match": {
+              "location": "LoginSteps.i_am_able_exit_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@addTodo"
+          }
+        ]
+      }
+    ],
+    "name": "Add a Todo to EY Module",
+    "description": "Add a Todo to EY functionality",
+    "id": "add-a-todo-to-ey-module",
+    "keyword": "Feature",
+    "uri": "addTodoPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Delete Todo from EY page",
+        "description": "",
+        "id": "delete-todo-from-ey-page;delete-todo-from-ey-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 297300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open",
+            "match": {
+              "location": "LoginSteps.main_page_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 801847600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login into EY mail",
+            "match": {
+              "location": "LoginSteps.i_login_into_the_webpage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22371800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am able to see the main page",
+            "match": {
+              "location": "LoginSteps.i_am_able_to_go_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 314564400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Click Here Link",
+            "match": {
+              "location": "LoginSteps.i_am_able_ToDo_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 60110831400,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".btn\\ btn\\-warning\"}\n  (Session info: chrome\u003d76.0.3809.100)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027US1255154W1\u0027, ip: \u0027192.168.86.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.3\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\\Users\\BZ324DG\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 5e91c98b790f4ef94d1142455d3...}\nSession ID: 5e91c98b790f4ef94d1142455d31f25b\n*** Element info: {Using\u003dclass name, value\u003dbtn btn-warning}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:403)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy35.click(Unknown Source)\r\n\tat com.EY.qa.pages.LoginPage.delete(LoginPage.java:137)\r\n\tat com.EY.qa.steps.LoginSteps.click_on_Delete_Button(LoginSteps.java:85)\r\n\tat ✽.Then Click on Delete Button(deleteTodo.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Click on Delete Button",
+            "match": {
+              "location": "LoginSteps.click_on_Delete_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "exit the page",
+            "match": {
+              "location": "LoginSteps.i_am_able_exit_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@addTodo"
+          }
+        ]
+      }
+    ],
+    "name": "Delete Todo from EY page",
+    "description": "Delete Todo from EY page functionality",
+    "id": "delete-todo-from-ey-page",
+    "keyword": "Feature",
+    "uri": "deleteTodo.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Logout from EY page",
+        "description": "",
+        "id": "ey-home-page-module;logout-from-ey-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 238100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open",
+            "match": {
+              "location": "LoginSteps.main_page_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16200964900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login into EY mail",
+            "match": {
+              "location": "LoginSteps.i_login_into_the_webpage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17255300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am able to see the main page",
+            "match": {
+              "location": "LoginSteps.i_am_able_to_go_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7020632700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on EY Link",
+            "match": {
+              "location": "LoginSteps.click_on_EY_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232761800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "exit the page",
+            "match": {
+              "location": "LoginSteps.i_am_able_exit_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@logout"
+          }
+        ]
+      }
+    ],
+    "name": "EY Home Page Module",
+    "description": "Test EY Home Page functionality",
+    "id": "ey-home-page-module",
+    "keyword": "Feature",
+    "uri": "eyHomePage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Logout from EY page",
+        "description": "",
+        "id": "todo-module;logout-from-ey-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 200600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open",
+            "match": {
+              "location": "LoginSteps.main_page_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5485248200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login into EY mail",
+            "match": {
+              "location": "LoginSteps.i_login_into_the_webpage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20325500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am able to see the main page",
+            "match": {
+              "location": "LoginSteps.i_am_able_to_go_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 326800400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Click Here Link",
+            "match": {
+              "location": "LoginSteps.i_am_able_ToDo_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 296886000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "exit the page",
+            "match": {
+              "location": "LoginSteps.i_am_able_exit_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@logout"
+          }
+        ]
+      }
+    ],
+    "name": "ToDo Module",
+    "description": "Test Todo module functionality",
+    "id": "todo-module",
+    "keyword": "Feature",
+    "uri": "landonToDopage.feature"
+  }
+]

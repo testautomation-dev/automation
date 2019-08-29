@@ -1,6 +1,6 @@
 Feature: Logout Module
   Test Logout module functionality
-@logout
+@logout @cicd
   Scenario: Logout from EY page
     Given Browser is open
     When I login into EY mail

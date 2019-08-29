@@ -1,6 +1,6 @@
 Feature: Delete Todo from EY page
   Delete Todo from EY page functionality
-  @deleteodo @cicd
+  @addTodo
   Scenario: Delete Todo from EY page
     Given Browser is open
     When I login into EY mail

@@ -1,6 +1,6 @@
 Feature: Login Module
   Test Login module functionality
-@login
+@login @cicd
   Scenario: Login into EY
     Given Browser is open
     When I login into EY mail
