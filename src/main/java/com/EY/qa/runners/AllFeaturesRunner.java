@@ -17,7 +17,7 @@ import java.net.MalformedURLException;
 /**
  * Created by Aruna on 08/07/19.
  */
-@CucumberOptions(features = "src/main/resources/features",
+@CucumberOptions(features = "src/main/resources/features/",
         plugin = {"pretty" ,
                 "json:target/cucumber.json"},
         glue = "com.EY.qa.steps",
@@ -28,13 +28,13 @@ import java.net.MalformedURLException;
 public class AllFeaturesRunner extends AbstractTestNGCucumberTests {
    WebDriver driver;
 
-    @BeforeSuite(alwaysRun = true)
-    public void setUp() throws MalformedURLException {
-
-        SetupTestDriver setupTestDriver = new SetupTestDriver();
-        WebApp.driver = setupTestDriver.getDriver();
-
-    }
+//    @BeforeSuite(alwaysRun = true)
+//    public void setUp() throws MalformedURLException {
+//
+//        SetupTestDriver setupTestDriver = new SetupTestDriver();
+//        //WebApp.driver = setupTestDriver.getDriver();
+//
+//    }
 
    // @After("@selenium")
     //@After("@browser")
